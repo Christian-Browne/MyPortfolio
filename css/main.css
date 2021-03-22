@@ -152,7 +152,7 @@ h3 {
 }
 
 @media only screen and (min-width: 375px) {
-    .hook, .left-column h1 {
+    .hook, .left-column h1, .job-description {
         text-align: left;
     }
 
