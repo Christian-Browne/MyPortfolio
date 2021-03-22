@@ -152,7 +152,7 @@ h3 {
 }
 
 @media only screen and (min-width: 375px) {
-    .left-column p, .left-column h1 {
+    .hook, .left-column h1 {
         text-align: left;
     }
 
@@ -201,7 +201,7 @@ h3 {
 }
 
 @media only screen and (min-width: 1420px) {
-    .left-column p {
+    .hook {
         font-size: 1.5em;
         font-weight: lighter;
     }
