@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+    font-family: 'Poppins';
+    margin: 3em;
+    background-image: url ("y-so-serious.png");
+}
+
+
+nav {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.list a {
+    padding-right: .5em;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+section {
+padding:6em 1em;
+text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: -.1em;
+}
+
+.hero p {
+    font-size: .9em;
+}
+
+.hero {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.left-column {
+    padding-bottom: 2em;
+}
+
+.social img {
+    max-width: 40px;
+}
+
+.hero-image {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+    margin-top: .5em;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+
+.projects {
+    text-align: center;
+    padding-top: 3em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cards {
+    text-align: center;
+    display:inline-block;
+    border: 2px solid black;
+    margin-bottom: 3em;
+    margin-left: 0em;
+    margin-right: 0em;
+    max-width: 450px;
+}
+
+.cards h3, .cards p  {
+    padding: .5em 2em;
+}
+
+.cards h3 {
+    margin-bottom: -1em;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.buttons p {
+    display: inline-block;
+    margin: 0em .5em;
+    padding: .5em 1em;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.code-btn {
+    background-color: rgb(158, 255, 78);
+}
+
+.demo-btn {
+    background-color: lightskyblue;
+}
+
+.card-image {
+    max-height: 300px;
+    object-position: center;
+}
+
+.cards img {
+    object-fit:cover;
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+}
+
+@media only screen and (min-width: 850px) {
+    body {
+        margin: 2em 6em;
+    }
+
+    .hero {
+        text-align: left;
+        display: flex;
+        padding-top: 6em;
+        align-items: center;
+    }
+
+    .left-column {
+        padding-right: 9em;
+        max-width: 500px;
+    }
+
+    .hero-image {
+        max-width: 15em;
+        max-height: 15em;
+    }
+
+    .social {
+        max-width: 70%;
+    }
+
+
+}
+
+@media only screen and (min-width: 1450px) {
+    body {
+        margin: 2em 15em;
+    }
+
+    .cards {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .left-column {
+        padding-right: 18em;
+    }
+}
