@@ -6,7 +6,6 @@ html {
 
 body {
     font-family: 'Poppins';
-    /* margin: 3em; */
 }
 
 
@@ -14,6 +13,7 @@ nav {
     display: flex;
     text-decoration: none;
     justify-content: space-between;
+    align-items: center;
     margin: 3em;
 }
 
@@ -85,11 +85,21 @@ h3 {
     font-size: 1.5em;
 }
 
+h2 {
+    text-align: center;
+}
+
 
 .projects {
     text-align: center;
     padding-top: 3em;
-    justify-content: space-between;
+    padding-right: 5em;
+    padding-left: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,.8fr));
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap: 2em;
 }
 
 /* .wrapper-project {
@@ -100,13 +110,8 @@ h3 {
 } */
 
 .cards {
-    text-align: center;
-    display:inline-block;
     border: 2px solid rgb(0, 0, 0);
     margin-bottom: 3em;
-    margin-left: 1.2em;
-    margin-right: 1.2em;
-    max-width: 400px;
 }
 
 .cards h3, .cards p  {
@@ -116,6 +121,7 @@ h3 {
 .cards h3 {
     margin-bottom: -1em;
 }
+
 
 .buttons {
     text-align: center;
@@ -148,10 +154,15 @@ h3 {
     object-fit:cover;
     width: 100%;
     height: 300px;
-    max-height: 300px;
+    /* max-height: 300px; */
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 360px) {
+    .hero, nav {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
     .hook, .left-column h1, .job-description {
         text-align: left;
     }
@@ -159,11 +170,20 @@ h3 {
     .social a {
         text-align: left;
     }
+
+    .projects {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
 }
 
 @media only screen and (min-width: 850px) {
-    .hero, .nav, .projets {
+    .hero, .nav {
         margin: 2em 4em;
+    }
+
+    nav {
+        margin: 4em;
     }
 
     .hero {
@@ -187,20 +207,31 @@ h3 {
         max-width: 70%;
     }
 
-    .cards {
-        max-width: 300px;
+    .projects {
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
 
 }
 
 @media only screen and (min-width: 1080px) {
-    .cards {
-        max-width: 400px;
+    .projects {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .hero-image {
+        max-width: 20em;
+        max-height: 20em;
     }
 }
 
 @media only screen and (min-width: 1420px) {
+    .hero, nav {
+        margin: 5em;
+    }
+    
     .hook {
         font-size: 1.5em;
         font-weight: lighter;
@@ -223,8 +254,8 @@ h3 {
         font-size: 5em;
     }
 
-    .cards {
-        margin-right: 3em;
-        max-width: 500px;
+    .projects {
+        padding-left: 5em;
+        padding-right: 5em;
     }
 }
