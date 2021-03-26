@@ -70,6 +70,10 @@ h1 {
     padding-bottom: 2em;
 }
 
+.hook {
+    padding-bottom: 1em;
+}
+
 .social img {
     max-width: 40px;
     margin-right: .8em;
