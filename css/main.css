@@ -321,13 +321,15 @@ h1 {
     }
 
     .card {
-        display: flex;
-        text-align: center;
-        justify-content: center;
+        /* padding: 2em; */
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        gap: 6em;
     }
 
     .buttons {
-        justify-content: center;
+        justify-content: left;
     }
 }
 
@@ -364,12 +366,11 @@ h1 {
     }
 
     .card {
-    padding: 2em;
-    display: flex;
+    /* padding: 2em; */
+    display: grid;
     text-align: left;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 6em;
 }
 
 .buttons {
