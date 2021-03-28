@@ -91,68 +91,41 @@ h1 {
     padding-top: 2em;
 }
 
-.projects h3 {
-    display: inline-block;
-    margin: 0;
-    margin-top: .5em;
-    padding: 0;
+.info h3 {
     font-size: 1.5em;
-}
-
-.projects {
-    text-align: center;
-    padding-top: 3em;
-    padding-right: 5em;
-    padding-left: 5em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,.8fr));
-    justify-content: center;
-    justify-items: center;
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
-}
-
-/* .wrapper-project {
-    background: rgb(247, 247, 247);
-    margin: 0;
-    padding: 0;
-} */
-
-
-/* Card Animation */
-
-.card-1 {
-    position: relative;
-    max-width: 500px;
-    max-height: 300px;
-    background: black;
-    border-radius: 5%;
-    background: url('../images/mytaskcover.jpg');
-    background-position: center ;
-    background-size: cover;
-    transition: all 0.3s ease-in-out;
-}
-
-.hovercard-1 {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 3em;
-    background: rgb(31, 21, 94);
-    border-radius: 5%;
-    color: white;
-    opacity: 0;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-}
-
-.hovercard-1 h3 {
     padding-bottom: .5em;
 }
 
-.card-1:hover .hovercard-1, .card-1:active .hovercard-1 {
-    opacity: 1;
+.projects {
+    padding-top: 3em;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+
+/* Cards */
+.project-img {
+    width: 500px;
+    align-self: center;
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+.card {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    color: black;
 }
 
 /* Button Styles */
@@ -161,6 +134,7 @@ h1 {
     text-align: center;
     padding-top: 1.5em;
     padding-bottom: 1em;
+    display: flex;
 }
 
 .buttons p {
@@ -168,7 +142,7 @@ h1 {
     margin: 0em .5em;
     padding: .5em 1em;
     font-weight: 500;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -251,6 +225,17 @@ h1 {
         padding-right: .5em;
     }
 
+    .card {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+    
+
     .skills-sec {
         margin-left: .5em;
     }
@@ -295,6 +280,16 @@ h1 {
         padding-right: 2em;
     }
 
+    .card {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
     .skills-sec {
         margin-left: 4em;
     }
@@ -323,6 +318,16 @@ h1 {
 
     .skills h2 {
         padding-left: 1.6em;
+    }
+
+    .card {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .buttons {
+        justify-content: center;
     }
 }
 
@@ -357,6 +362,19 @@ h1 {
         padding-left: 5em;
         padding-right: 5em;
     }
+
+    .card {
+    padding: 2em;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    justify-content: left;
+}
 
     .skills-sec {
         margin-left: 5em;
