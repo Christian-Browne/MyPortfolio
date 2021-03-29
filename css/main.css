@@ -133,6 +133,12 @@ h1 {
     color:rebeccapurple;
 }
 
+p.tools {
+    padding-top: .3em;
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
 /* Button Styles */
 
 .buttons {
