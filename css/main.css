@@ -57,6 +57,7 @@ h1 {
 
 .hero p {
     font-size: 1.2em;
+    line-height: 2em;
 }
 
 .hero {
@@ -128,6 +129,10 @@ h1 {
     color: black;
 }
 
+.info .tag {
+    color:rebeccapurple;
+}
+
 /* Button Styles */
 
 .buttons {
@@ -166,43 +171,56 @@ h1 {
     color: white;
 }
 
-.skills-sec {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 5em;
-}
-
-.dev-skills {
-    margin-right: 20%;
+.skills {
+    padding: 3em;
 }
 
 .skills h2 {
     font-size: 3em;
-    padding-top: 2em;
-    padding-left: 1.6em;
     padding-bottom: 1em;
+    text-align: center;
 }
 
 .dev-skills h3 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .dev-skills li {
+    margin-right: 2em;
+    margin-bottom: 1em;
+    padding: .2em .8em;
     font-size: 2em;
     list-style: none;
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
 }
 
 .dev-skills ul {
+    padding-top: 3em;
     padding-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .des-skills h3 {
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+.des-skills ul {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .des-skills li {
+    margin-right: 2em;
+    margin-bottom: 1em;
+    padding: .2em .8em;
     font-size: 2em;
     list-style: none;
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
 }
 
 
@@ -243,6 +261,7 @@ h1 {
     .skills h2 {
         padding-left: .1em;
     }
+
 }
 
 @media only screen and (min-width: 850px) {
@@ -297,8 +316,6 @@ h1 {
     .skills h2 {
         padding-left: 1.3em;
     }
-
-
 }
 
 @media only screen and (min-width: 1080px) {
@@ -334,6 +351,7 @@ h1 {
 }
 
 @media only screen and (min-width: 1420px) {
+    
     .hero, nav {
         margin: 5em;
     }
@@ -367,15 +385,15 @@ h1 {
 
     .card {
     /* padding: 2em; */
-    display: grid;
-    text-align: left;
-    grid-template-columns: 1fr 1fr;
-    gap: 6em;
-}
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        gap: 6em;
+    }
 
-.buttons {
-    justify-content: left;
-}
+    .buttons {
+        justify-content: left;
+    }
 
     .skills-sec {
         margin-left: 5em;
