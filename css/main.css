@@ -11,7 +11,13 @@ html {
 
 body {
   font-family: 'Poppins';
-  background-color: #131313;
+  background-color: #1b1f24;
+}
+
+.header-wrapper {
+  background-image: linear-gradient(0deg, #1b1f24, #423ab82d);
+  background-size: cover;
+  margin: 0;
 }
 
 nav {
@@ -19,7 +25,8 @@ nav {
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
-  margin: 3em;
+  /* margin: 3em; */
+  padding: 3rem;
 }
 
 .logo {
@@ -35,6 +42,8 @@ nav {
   padding-right: 0.5em;
   color: white;
   font-size: 1.5em;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 .list a:hover {
@@ -48,10 +57,10 @@ a:link {
 h1 {
   font-size: 3em;
   margin-bottom: 0em;
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-thickness: 5px;
-  text-decoration-color: #3926a0;
+  text-decoration-color: #3926a0; */
 }
 
 .job-description {
@@ -98,32 +107,16 @@ h1 {
   transform: scale(1.2);
 }
 
-/* Waves Layers */
-.waves-container {
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.waves {
-  background-image: url('../images/stacked-steps-haikei.svg');
-}
-
-.wrapper-project {
-  background-color: #3926a0;
-}
-
-.flipped {
-  transform: rotate(180deg);
-}
-
 .wrapper-project h2 {
   text-align: center;
-  font-size: 3em;
-  color: white;
-  /* padding-top: 2em; */
+  font-size: 5em;
+  margin-top: 20rem;
+  background-image: linear-gradient(15deg, #68ffde, #a53ab8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .projects {
@@ -131,6 +124,7 @@ h1 {
   padding-right: 5em;
   padding-left: 5em;
   padding-bottom: 2.5em;
+  background-color: #1b1f24;
 }
 
 /* Cards */
@@ -148,11 +142,24 @@ h1 {
 }
 
 .card {
-  padding: 2em;
+  padding: 3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  /* background-color: #24292f; */
+  border-radius: 6px;
+  /* border: 1px solid black; */
+  filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.187));
+  margin: 4rem 0rem;
+  position: relative;
+  top: 0px;
+}
+
+.card:hover {
+  /* filter: drop-shadow(0px 20px 20px rgba(103, 131, 255, 0.161)); */
+  position: relative;
+  top: -8px;
 }
 
 .info h3 {
@@ -162,17 +169,17 @@ h1 {
 }
 
 .info p {
-  color: black;
+  color: white;
 }
 
 .info .tag {
-  color: #ffa410;
+  color: #7ca3ff;
 }
 
 p.tools {
   padding-top: 0.3em;
-  color: #ffffff;
-  font-weight: bold;
+  color: #7ca3ff;
+  /* font-weight: bold; */
 }
 
 /* Button Styles */
@@ -186,90 +193,75 @@ p.tools {
 
 .buttons p {
   display: inline-block;
-  margin: 0em 0.5em;
+  margin-right: 0.5em;
   padding: 0.5em 1em;
+  word-spacing: 0.5rem;
   font-weight: 500;
-  color: black;
+  color: white;
   cursor: pointer;
+  background-color: #24292f;
+  border: 1px solid black;
+  border-radius: 6px;
+
+  background: linear-gradient(to right, #7ca3ff 50%, #24292f 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.1s ease-out;
 }
 
-.code-btn {
-  border: solid 2px;
-  border-color: blueviolet;
+.buttons p:hover {
+  background-position: left bottom;
 }
 
-.code-btn:hover {
-  background-color: blueviolet;
-  color: white;
-}
-
-.demo-btn {
-  border: solid 2px;
-  border-color: rgb(31, 155, 212);
-}
-
-.demo-btn:hover {
-  background-color: rgb(31, 155, 212);
-  color: white;
-}
-
-.skills {
+.skills-section {
   padding: 3em;
 }
 
-.skills h2 {
+.skills-section h2 {
   font-size: 3em;
   padding-bottom: 1em;
   text-align: center;
   color: white;
 }
 
-.dev-skills {
-  margin-bottom: 3rem;
-}
-
-.dev-skills h3 {
-  font-size: 2.5em;
-  color: white;
-}
-
-.dev-skills ul {
-  padding-top: 3em;
-  padding-bottom: 3em;
+.skills {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 5rem;
 }
 
-.dev-skills li {
-  margin-right: 2em;
-  margin-bottom: 1em;
-  padding: 0.2em 0.8em;
-  font-size: 2em;
-  list-style: none;
-  background: rgb(235, 235, 235);
-  border-radius: 10px;
+.skill {
+  max-width: 7.5rem;
+  height: 7.5rem;
+  background-color: #24292f;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  filter: drop-shadow(0px 30px 20px rgba(0, 0, 0, 0.336));
 }
 
-.des-skills h3 {
-  font-size: 2.5em;
+.skill::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.skill img {
+  object-fit: contain;
+  position: relative;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: auto;
+  height: 6rem;
+  width: 6rem;
+}
+
+.skill p {
+  text-align: center;
+  margin-top: 0.5rem;
   color: white;
-}
-
-.des-skills ul {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.des-skills li {
-  margin-right: 2em;
-  margin-bottom: 1em;
-  padding: 0.2em 0.8em;
-  font-size: 2em;
-  list-style: none;
-  background: rgb(235, 235, 235);
-  border-radius: 10px;
 }
 
 @media only screen and (min-width: 360px) {
@@ -319,9 +311,9 @@ p.tools {
     margin: 2em 4em;
   }
 
-  nav {
+  /* nav {
     margin: 4em;
-  }
+  } */
 
   .hero {
     text-align: left;
@@ -401,8 +393,7 @@ p.tools {
 }
 
 @media only screen and (min-width: 1420px) {
-  .hero,
-  nav {
+  .hero {
     margin: 5em;
   }
 
