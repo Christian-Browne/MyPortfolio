@@ -224,6 +224,24 @@ p.tools {
   color: white;
 }
 
+.lang {
+  background-image: linear-gradient(45deg, #ff002f, #0040ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.tech {
+  background-image: linear-gradient(45deg, #00ff8c, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 .skills {
   display: flex;
   justify-content: center;
