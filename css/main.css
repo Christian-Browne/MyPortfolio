@@ -215,6 +215,8 @@ p.tools {
 
 .skills-section {
   padding: 3em;
+  max-width: 70vw;
+  margin: 0 auto;
 }
 
 .skills-section h2 {
